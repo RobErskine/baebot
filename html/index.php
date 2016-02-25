@@ -55,7 +55,7 @@
                 <p>There are plenty of reasons to get a <code>BaeBot</code>.</p>
                 <p>Maybe you need a screenshot to destroy your horrible ex with.</p>
                 <p>Maybe you are just trying to get a reliable text back for once.</p>
-                <a class="text" href="sms:16173154161?body=Hey%20babe">Get a <code>Bae</code></a>
+                <a class="text" href="sms:16173154161">Get a <code>Bae</code></a>
                 <p class="number">Text <code>+1 (617) 315-4161</code>  to get a Bae.</p>
             </section>
         </main>
@@ -63,7 +63,7 @@
         <script src="//ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
         <script>window.jQuery || document.write('<script src="/js/vendor/jquery.js"><\/script>')</script>
         <script type="text/javascript">
-            $('figure').on('click',function(){
+            $('figure, a.number').on('click',function(){
                 $('body').addClass('love-me');
             });
         </script>

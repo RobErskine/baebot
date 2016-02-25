@@ -374,48 +374,49 @@ main section a {
   padding: 1em 2.5em;
   color: #fff;
   font-weight: 700;
+  text-align: center;
   -webkit-transition: all 0.3s ease-in;
   -moz-transition: all 0.3s ease-in;
   transition: all 0.3s ease-in;
 }
-/* line 120, ../../build/sass/screen.scss */
+/* line 121, ../../build/sass/screen.scss */
 main section a code {
   font-size: 1.25em;
 }
 
-/* line 128, ../../build/sass/screen.scss */
+/* line 129, ../../build/sass/screen.scss */
 .no-touchevents main figure:hover img.eyes-regular {
   display: none;
 }
-/* line 131, ../../build/sass/screen.scss */
+/* line 132, ../../build/sass/screen.scss */
 .no-touchevents main figure:hover img.eyes-squint {
   display: block;
 }
 
-/* line 136, ../../build/sass/screen.scss */
+/* line 137, ../../build/sass/screen.scss */
 body.love-me {
   background-color: #00B5FF;
 }
-/* line 138, ../../build/sass/screen.scss */
+/* line 139, ../../build/sass/screen.scss */
 body.love-me main section a {
   background-color: #FF4D74;
   border-bottom: 3px solid #ff1a4c;
 }
-/* line 142, ../../build/sass/screen.scss */
+/* line 143, ../../build/sass/screen.scss */
 body.love-me p code {
   background-color: #33c4ff;
 }
-/* line 146, ../../build/sass/screen.scss */
+/* line 147, ../../build/sass/screen.scss */
 body.love-me figure img.eyes-regular,
 body.love-me figure img.eyes-squint, body.love-me figure:hover img.eyes-regular,
 body.love-me figure:hover img.eyes-squint {
   display: none;
 }
-/* line 150, ../../build/sass/screen.scss */
+/* line 151, ../../build/sass/screen.scss */
 body.love-me figure img.eyes-hearts, body.love-me figure:hover img.eyes-hearts {
   display: block;
 }
-/* line 153, ../../build/sass/screen.scss */
+/* line 154, ../../build/sass/screen.scss */
 body.love-me figure img.baebot,
 body.love-me figure div.shadow, body.love-me figure:hover img.baebot,
 body.love-me figure:hover div.shadow {
@@ -424,27 +425,27 @@ body.love-me figure:hover div.shadow {
   animation-duration: 3s;
 }
 
-/* line 161, ../../build/sass/screen.scss */
+/* line 162, ../../build/sass/screen.scss */
 .no-touchevents a.text {
   display: none;
 }
-/* line 164, ../../build/sass/screen.scss */
+/* line 165, ../../build/sass/screen.scss */
 .no-touchevents p.number {
   display: block;
   font-size: 20px;
 }
 
-/* line 170, ../../build/sass/screen.scss */
-.touchevents p.text {
+/* line 171, ../../build/sass/screen.scss */
+.touchevents p.number {
   display: none;
 }
-/* line 173, ../../build/sass/screen.scss */
+/* line 174, ../../build/sass/screen.scss */
 .touchevents a.text {
   display: block;
 }
 
 @media all and (min-width: 800px) {
-  /* line 179, ../../build/sass/screen.scss */
+  /* line 180, ../../build/sass/screen.scss */
   main {
     *zoom: 1;
     max-width: 1200px;
@@ -471,7 +472,7 @@ body.love-me figure:hover div.shadow {
   main:after {
     clear: both;
   }
-  /* line 184, ../../build/sass/screen.scss */
+  /* line 185, ../../build/sass/screen.scss */
   main figure {
     display: block;
     float: left;
@@ -482,7 +483,7 @@ body.love-me figure:hover div.shadow {
   main figure:last-child {
     margin-right: 0;
   }
-  /* line 187, ../../build/sass/screen.scss */
+  /* line 188, ../../build/sass/screen.scss */
   main section {
     display: block;
     float: left;
