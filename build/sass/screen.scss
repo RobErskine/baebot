@@ -158,6 +158,28 @@ body.love-me{
     }
 }
 
+footer{
+    display:block;
+    margin:20px auto;
+    img{
+        display:none;
+    }
+    p{
+        color:#fff;
+        font-size:14px;
+        width:100%;
+        text-align:center;
+    }
+    a{
+        color:lighten($secondary,10%);
+        text-decoration: none;
+    }
+}
+
+body.love-me footer a{
+    color:lighten($primary,10%);
+}
+
 .no-touchevents{
     a.text{
         display:none;
@@ -187,6 +209,25 @@ body.love-me{
         }
         section{
             @include span-columns(9);
+        }
+    }
+    footer{
+        @include position(absolute, auto auto 20px 50%);
+        @include transform(translateX(-50%));
+        img{
+            @include size(0px);
+            display:inline-block;
+            @include border-radius(50%);
+            position:absolute;
+            top:-120px;
+            left:calc(50% + 43px);
+            @include transform(translateX(-50%));
+            @include transition(all .3s ease-in-out);
+        }
+    }
+    .no-touchevents footer a:hover{
+        img{
+            @include size(90px);
         }
     }
 }

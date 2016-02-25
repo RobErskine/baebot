@@ -425,27 +425,54 @@ body.love-me figure:hover div.shadow {
   animation-duration: 3s;
 }
 
-/* line 162, ../../build/sass/screen.scss */
+/* line 161, ../../build/sass/screen.scss */
+footer {
+  display: block;
+  margin: 20px auto;
+}
+/* line 164, ../../build/sass/screen.scss */
+footer img {
+  display: none;
+}
+/* line 167, ../../build/sass/screen.scss */
+footer p {
+  color: #fff;
+  font-size: 14px;
+  width: 100%;
+  text-align: center;
+}
+/* line 173, ../../build/sass/screen.scss */
+footer a {
+  color: #33c4ff;
+  text-decoration: none;
+}
+
+/* line 179, ../../build/sass/screen.scss */
+body.love-me footer a {
+  color: #ff809c;
+}
+
+/* line 184, ../../build/sass/screen.scss */
 .no-touchevents a.text {
   display: none;
 }
-/* line 165, ../../build/sass/screen.scss */
+/* line 187, ../../build/sass/screen.scss */
 .no-touchevents p.number {
   display: block;
   font-size: 20px;
 }
 
-/* line 171, ../../build/sass/screen.scss */
+/* line 193, ../../build/sass/screen.scss */
 .touchevents p.number {
   display: none;
 }
-/* line 174, ../../build/sass/screen.scss */
+/* line 196, ../../build/sass/screen.scss */
 .touchevents a.text {
   display: block;
 }
 
 @media all and (min-width: 800px) {
-  /* line 180, ../../build/sass/screen.scss */
+  /* line 202, ../../build/sass/screen.scss */
   main {
     *zoom: 1;
     max-width: 1200px;
@@ -472,7 +499,7 @@ body.love-me figure:hover div.shadow {
   main:after {
     clear: both;
   }
-  /* line 185, ../../build/sass/screen.scss */
+  /* line 207, ../../build/sass/screen.scss */
   main figure {
     display: block;
     float: left;
@@ -483,7 +510,7 @@ body.love-me figure:hover div.shadow {
   main figure:last-child {
     margin-right: 0;
   }
-  /* line 188, ../../build/sass/screen.scss */
+  /* line 210, ../../build/sass/screen.scss */
   main section {
     display: block;
     float: left;
@@ -493,6 +520,46 @@ body.love-me figure:hover div.shadow {
   /* line 33, ../../build/sass/neat/grid/_span-columns.scss */
   main section:last-child {
     margin-right: 0;
+  }
+
+  /* line 214, ../../build/sass/screen.scss */
+  footer {
+    position: absolute;
+    top: auto;
+    right: auto;
+    bottom: 20px;
+    left: 50%;
+    -webkit-transform: translateX(-50%);
+    -moz-transform: translateX(-50%);
+    -ms-transform: translateX(-50%);
+    -o-transform: translateX(-50%);
+    transform: translateX(-50%);
+  }
+  /* line 217, ../../build/sass/screen.scss */
+  footer img {
+    width: 0px;
+    height: 0px;
+    display: inline-block;
+    -moz-border-radius: 50%;
+    -webkit-border-radius: 50%;
+    border-radius: 50%;
+    position: absolute;
+    top: -120px;
+    left: calc(50% + 43px);
+    -webkit-transform: translateX(-50%);
+    -moz-transform: translateX(-50%);
+    -ms-transform: translateX(-50%);
+    -o-transform: translateX(-50%);
+    transform: translateX(-50%);
+    -webkit-transition: all 0.3s ease-in-out;
+    -moz-transition: all 0.3s ease-in-out;
+    transition: all 0.3s ease-in-out;
+  }
+
+  /* line 229, ../../build/sass/screen.scss */
+  .no-touchevents footer a:hover img {
+    width: 90px;
+    height: 90px;
   }
 }
 

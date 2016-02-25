@@ -59,6 +59,7 @@
                 <p class="number">Text <code>+1 (617) 315-4161</code>  to get a Bae.</p>
             </section>
         </main>
+        <footer><p>Built with &hearts; by <a href="https://twitter.com/140orlessjess" target="_blank"><img src="/img/jess.png" alt="it's jess!">Jess</a> &amp; <a href="https://twitter.com/erskinerob" target="_blank"><img src="/img/rob.png" alt="it's rob!">Rob</a>.</p></footer>
         <script src="/js/vendor/modernizr.js"></script>
         <script src="//ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
         <script>window.jQuery || document.write('<script src="/js/vendor/jquery.js"><\/script>')</script>
