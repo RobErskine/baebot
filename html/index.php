@@ -13,7 +13,13 @@
         <link rel="icon" type="image/png" href="/img/favicon.png"/>
 
         <link href='https://fonts.googleapis.com/css?family=Montserrat:400,700' rel='stylesheet' type='text/css'>
-        <link rel="stylesheet" href="/stylesheets/screen.css" media="all">
+
+        <style>
+            <?php
+                $critical = file_get_contents('stylesheets/screen.css');
+                echo $critical;
+            ?>
+         </style>
 
         <!-- twitter cards -->
         <meta name="twitter:card" content="summary_large_image">

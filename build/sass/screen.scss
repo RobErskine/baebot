@@ -51,7 +51,7 @@ main{
         height:330px;
         width:146px;
         display:block;
-        margin:0 auto;
+        margin:0 auto 100px;
         div.bae{
             position:relative;
             @include animation(bob 6s ease infinite alternate);
@@ -171,7 +171,7 @@ body.love-me{
         display:none;
     }
     a.text{
-        display:none;
+        display:block;
     }
 }
 

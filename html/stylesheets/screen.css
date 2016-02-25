@@ -273,7 +273,7 @@ main figure {
   height: 330px;
   width: 146px;
   display: block;
-  margin: 0 auto;
+  margin: 0 auto 100px;
 }
 /* line 55, ../../build/sass/screen.scss */
 main figure div.bae {
@@ -440,7 +440,7 @@ body.love-me figure:hover div.shadow {
 }
 /* line 173, ../../build/sass/screen.scss */
 .touchevents a.text {
-  display: none;
+  display: block;
 }
 
 @media all and (min-width: 800px) {
