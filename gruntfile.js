@@ -210,7 +210,7 @@ module.exports = function(grunt) {
           livereload: true,
         },
         html:{
-          files: ['html/**/*.html','craft/**/*.html'],
+          files: ['html/**/*.html','craft/**/*.html','html/**/*.php'],
           tasks: ['build'],
         },
         js:{

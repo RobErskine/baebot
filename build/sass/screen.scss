@@ -1,1 +1,191 @@
 @import "partials/base";
+
+$primary: #FF4D74;
+$secondary: #00B5FF;
+
+body{
+    background-color:$primary;
+    padding:10px;
+    font-family:'Montserrat', $helvetica;
+    -webkit-font-smoothing: antialiased;
+    @include transition(backround-color .3s ease-in);
+}
+
+code{
+    display:inline;
+    font-family:monospace;
+}
+
+p code{
+    padding:3px 6px;
+    border-radius:1px;
+    background-color:lighten($primary,10%);
+    @include transition(all .3s ease-in);
+}
+
+@include keyframes(bob){
+    0%{
+        top:0px;
+    }
+    100%{
+        top:30px;
+    }
+}
+
+@include keyframes(shadow){
+    0%{
+        width:30%;
+    }
+    100%{
+        width:60%;
+    }
+}
+
+main{
+    width:100%;
+    margin:0 auto;
+    color:#fff;
+    figure{
+        position:relative;
+        cursor:pointer;
+        height:330px;
+        width:146px;
+        display:block;
+        margin:0 auto;
+        div.bae{
+            position:relative;
+            @include animation(bob 6s ease infinite alternate);
+        }
+        img.baebot{
+            position:relative;
+            z-index:2;
+            display:block;
+            margin:0 auto;
+            width:100%;    
+        }
+        img.eyes{
+            width:85%;
+            @include position(absolute, 10px auto auto 50%);
+            @include transform(translateX(-50%));
+            z-index:1;
+        }
+        img.eyes-squint,img.eyes-hearts{
+            display:none;
+        }
+        div.shadow{
+            display:block;
+            @include animation(shadow 6s ease infinite alternate);
+            height:8px;
+            @include border-radius(100%);
+            background-color:rgba(#000,0.1);
+            @include position(absolute, auto auto -90px 50%);
+            @include transform(translateX(-50%));
+        }
+    }
+    section{
+        padding:30px;
+        font-size:16px;
+        color:#fff;
+        h1{
+            font-weight:700;
+            font-size:1.33em;
+            line-height:1.25;
+            padding-bottom:25px;
+            margin-bottom:20px;
+            position:relative;
+            &:after{
+                @extend %psuedo-content;
+                width:33%;
+                height:2px;
+                background-color:#fff;
+                @include position(absolute, auto auto 0px 0px);
+            }
+        }
+        p{
+            font-weight:400;
+            margin-bottom:0.735em;
+            line-height:1.375;
+        }
+        a{
+            background-color:$secondary;
+            border-bottom:3px solid darken($secondary,10%);
+            display:inline-block;
+            text-transform: uppercase;
+            text-decoration:none;
+            margin-top:1em;
+            padding:1em 2.5em;
+            color:#fff;
+            font-weight:700;
+            @include transition(all .3s ease-in);
+            code{
+                font-size:1.25em;
+            }
+        }
+    }
+}
+
+.no-touchevents main figure:hover{
+    img.eyes-regular{
+        display:none;
+    }
+    img.eyes-squint{
+        display:block;
+    }
+}
+
+body.love-me{
+    background-color:$secondary;
+    main section a{
+        background-color:$primary;
+        border-bottom:3px solid darken($primary,10%);
+    }
+    p code{
+        background-color:lighten($secondary,10%);
+    }
+    figure,figure:hover{
+        img.eyes-regular,
+        img.eyes-squint{
+            display:none;
+        }
+        img.eyes-hearts{
+            display:block;
+        }
+        img.baebot,
+        div.shadow{
+            @include animation-duration(3s);
+        }
+    }
+}
+
+.no-touchevents{
+    a.text{
+        display:none;
+    }
+    p.number{
+        display:block;
+        font-size:20px;
+    }
+}
+.touchevents{
+    p.text{
+        display:none;
+    }
+    a.text{
+        display:none;
+    }
+}
+
+@media all and(min-width: 800px){
+    main{
+        @include outer-container();
+        max-width:660px;
+        @include position(absolute, 50% auto auto 50%);
+        @include transform(translateX(-50%) translateY(-50%));
+        figure{
+            @include span-columns(3);
+        }
+        section{
+            @include span-columns(9);
+        }
+    }
+}
