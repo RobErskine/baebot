@@ -219,7 +219,7 @@ body.love-me footer a{
             display:inline-block;
             @include border-radius(50%);
             position:absolute;
-            top:-120px;
+            top:-95px;
             left:calc(50% + 43px);
             @include transform(translateX(-50%));
             @include transition(all .3s ease-in-out);
@@ -227,7 +227,7 @@ body.love-me footer a{
     }
     .no-touchevents footer a:hover{
         img{
-            @include size(90px);
+            @include size(80px);
         }
     }
 }
