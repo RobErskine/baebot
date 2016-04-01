@@ -59,7 +59,7 @@
                 <p class="number">Text <code>+1 (617) 315-4161</code>  to get a Bae.</p>
             </section>
         </main>
-        <footer><p>Built with &hearts; by <a href="https://twitter.com/140orlessjess" target="_blank"><img src="/img/jess.png" alt="it's jess!">Jess</a> &amp; <a href="https://twitter.com/erskinerob" target="_blank"><img src="/img/rob.png" alt="it's rob!">Rob</a>. <a href="https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=AGBW5HZL3VPAY" target="_blank">Donate</a> to Bae?</p></footer>
+        <footer><p>Built with &hearts; by <a href="https://twitter.com/140orlessjess" target="_blank"><img src="/img/jess.png" alt="it's jess!">Jess</a> &amp; <a href="https://twitter.com/erskinerob" target="_blank"><img src="/img/rob.png" alt="it's rob!">Rob</a>. <a href="mailto:rob@roberskine.com?subject=BaeBot<3">Contact us</a>. <a href="https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=AGBW5HZL3VPAY" target="_blank">Donate</a> to Bae?</p></footer>
         <script src="/js/vendor/modernizr.js"></script>
         <script src="//ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
         <script>window.jQuery || document.write('<script src="/js/vendor/jquery.js"><\/script>')</script>

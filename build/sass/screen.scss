@@ -161,12 +161,14 @@ body.love-me{
 footer{
     display:block;
     margin:20px auto;
+    padding:0 30px;
     img{
         display:none;
     }
     p{
         color:#fff;
         font-size:14px;
+        line-height:1.375;
         width:100%;
         text-align:center;
     }
@@ -223,6 +225,9 @@ body.love-me footer a{
             left:calc(50% - 3px);
             @include transform(translateX(-50%));
             @include transition(all .3s ease-in-out);
+        }
+        p{
+            padding:0px;
         }
     }
     .no-touchevents footer a:hover{

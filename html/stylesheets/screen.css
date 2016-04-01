@@ -429,50 +429,52 @@ body.love-me figure:hover div.shadow {
 footer {
   display: block;
   margin: 20px auto;
+  padding: 0 30px;
 }
-/* line 164, ../../build/sass/screen.scss */
+/* line 165, ../../build/sass/screen.scss */
 footer img {
   display: none;
 }
-/* line 167, ../../build/sass/screen.scss */
+/* line 168, ../../build/sass/screen.scss */
 footer p {
   color: #fff;
   font-size: 14px;
+  line-height: 1.375;
   width: 100%;
   text-align: center;
 }
-/* line 173, ../../build/sass/screen.scss */
+/* line 175, ../../build/sass/screen.scss */
 footer a {
   color: #33c4ff;
   text-decoration: none;
 }
 
-/* line 179, ../../build/sass/screen.scss */
+/* line 181, ../../build/sass/screen.scss */
 body.love-me footer a {
   color: #ff809c;
 }
 
-/* line 184, ../../build/sass/screen.scss */
+/* line 186, ../../build/sass/screen.scss */
 .no-touchevents a.text {
   display: none;
 }
-/* line 187, ../../build/sass/screen.scss */
+/* line 189, ../../build/sass/screen.scss */
 .no-touchevents p.number {
   display: block;
   font-size: 20px;
 }
 
-/* line 193, ../../build/sass/screen.scss */
+/* line 195, ../../build/sass/screen.scss */
 .touchevents p.number {
   display: none;
 }
-/* line 196, ../../build/sass/screen.scss */
+/* line 198, ../../build/sass/screen.scss */
 .touchevents a.text {
   display: block;
 }
 
 @media all and (min-width: 800px) {
-  /* line 202, ../../build/sass/screen.scss */
+  /* line 204, ../../build/sass/screen.scss */
   main {
     *zoom: 1;
     max-width: 1200px;
@@ -499,7 +501,7 @@ body.love-me footer a {
   main:after {
     clear: both;
   }
-  /* line 207, ../../build/sass/screen.scss */
+  /* line 209, ../../build/sass/screen.scss */
   main figure {
     display: block;
     float: left;
@@ -510,7 +512,7 @@ body.love-me footer a {
   main figure:last-child {
     margin-right: 0;
   }
-  /* line 210, ../../build/sass/screen.scss */
+  /* line 212, ../../build/sass/screen.scss */
   main section {
     display: block;
     float: left;
@@ -522,7 +524,7 @@ body.love-me footer a {
     margin-right: 0;
   }
 
-  /* line 214, ../../build/sass/screen.scss */
+  /* line 216, ../../build/sass/screen.scss */
   footer {
     position: absolute;
     top: auto;
@@ -535,7 +537,7 @@ body.love-me footer a {
     -o-transform: translateX(-50%);
     transform: translateX(-50%);
   }
-  /* line 217, ../../build/sass/screen.scss */
+  /* line 219, ../../build/sass/screen.scss */
   footer img {
     width: 0px;
     height: 0px;
@@ -555,8 +557,12 @@ body.love-me footer a {
     -moz-transition: all 0.3s ease-in-out;
     transition: all 0.3s ease-in-out;
   }
-
   /* line 229, ../../build/sass/screen.scss */
+  footer p {
+    padding: 0px;
+  }
+
+  /* line 234, ../../build/sass/screen.scss */
   .no-touchevents footer a:hover img {
     width: 80px;
     height: 80px;
